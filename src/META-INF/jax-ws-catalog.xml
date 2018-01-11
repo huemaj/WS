@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://hitr3p.ng.hit.si:8000/sap/bc/soap/wsdl11?services=ZHR_PUT_T005U&amp;sap-client=100" uri="wsdl/hitr3p.ng.hit.si_8000/sap/bc/soap/wsdl11.services_zhr_put_t005u_sap-client_100.wsdl"/>
+</catalog>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-wsdl11_services_ZHR_PUT_T005U_sap-client_100" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/wsdl11_services_ZHR_PUT_T005U_sap-client_100"/>
+        <property name="wsdl-wsdl11_services_ZHR_PUT_T005U_sap-client_100" location="xml-resources/web-service-references/wsdl11_services_ZHR_PUT_T005U_sap-client_100/wsdl/hitr3p.ng.hit.si_8000/sap/bc/soap/wsdl11.services_zhr_put_t005u_sap-client_100.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsdl11_services_ZHR_PUT_T005U_sap-client_100" destdir="${build.generated.dir}/jax-wsCache/wsdl11_services_ZHR_PUT_T005U_sap-client_100" wsdl="${wsdl-wsdl11_services_ZHR_PUT_T005U_sap-client_100}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://hitr3p.ng.hit.si:8000/sap/bc/soap/wsdl11?services=ZHR_PUT_T005U&amp;sap-client=100" xnocompile="true" xendorsed="true" package="si.hit.sj.ws">
+            <depends file="${wsdl-wsdl11_services_ZHR_PUT_T005U_sap-client_100}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/wsdl11_services_ZHR_PUT_T005U_sap-client_100"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/wsdl11_services_ZHR_PUT_T005U_sap-client_100">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-wsdl11_services_ZHR_PUT_T005U_sap-client_100" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/wsdl11_services_ZHR_PUT_T005U_sap-client_100"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/si/hit/sj/ws"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-wsdl11_services_ZHR_PUT_T005U_sap-client_100"/>
+</project>
